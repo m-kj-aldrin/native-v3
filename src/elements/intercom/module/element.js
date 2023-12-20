@@ -64,6 +64,9 @@ export class com_module extends HTMLElement {
             this.#attached = true;
             this.signal();
         }
+        if (!this.#attached) {
+            this.#attached = true;
+        }
     }
 
     detach() {
@@ -86,11 +89,7 @@ export class com_module extends HTMLElement {
         }
     }
 
-    connectedCallback() {
-        if (!this.#attached && this.parent) {
-            this.#attached = true;
-        }
-    }
+    connectedCallback() {}
 
     disconnectedCallback() {
         if (this.#attached && this.parent) {

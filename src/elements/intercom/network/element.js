@@ -32,6 +32,7 @@ export class com_network extends HTMLElement {
                 new_module.type = module.type;
                 new_module.index = i;
                 new_module.slot = "modules";
+                new_module.attach();
                 return new_module;
             });
 
