@@ -1,19 +1,17 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-input,
-button {
-  background-color: transparent;
-  border: 1px currentColor solid;
-  border-radius: 2px;
+:where(input, button) {
+    background-color: transparent;
+    border: 1px currentColor solid;
+    border-radius: 2px;
 
-  font-family: inherit;
-  color: currentColor;
-  font-size: inherit;
-  line-height: inherit;
-  display: inline-block;
+    font-family: inherit;
+    color: currentColor;
+    font-size: inherit;
+    line-height: inherit;
+    display: inline-block;
 
-  cursor: pointer;
+    cursor: pointer;
 }
-

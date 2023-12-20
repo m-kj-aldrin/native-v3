@@ -1,14 +1,34 @@
 :root {
-  --space-0: 2px;
-  --space-1: 4px;
-  --space-2: 8px;
+    --space-0: 2px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 32px;
 }
 
-:root{
-  --color-gray: #aaa;
-  --color-gray-light: #ddd;
+:root {
+    --color-hue-primary: hsl(143, 86%, 59%);
+    --color-hue-secondary: hsl(44, 84%, 52%);
+
+    --color-error: hsl(5 90% 60%);
+    --color-info: hsl(40 50% 50%);
+
+    --color-black: color-mix(in srgb, var(--color-hue-primary) 25%, #000);
+    --color-white: color-mix(in srgb, var(--color-hue-primary) 5%, #fff);
+
+    --color-gray: color-mix(
+        in srgb,
+        var(--color-black) 45%,
+        var(--color-white)
+    );
+    --color-gray-light: color-mix(
+        in srgb,
+        var(--color-gray) 40%,
+        var(--color-white)
+    );
 }
 
-:root{
-  --border-0: 1px var(--color-gray-light) solid;
+:root {
+    --border-0: 1px var(--color-gray-light) solid;
+    --border-radius: 2px;
 }

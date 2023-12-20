@@ -6,6 +6,9 @@ body {
 }
 
 body {
+  color: var(--color-black);
+  background-color: var(--color-white);
+
   margin: 0;
   padding: var(--space-2);
 
@@ -13,4 +16,6 @@ body {
   line-height: 1;
 
   display: grid;
+
+  font-size: 10px;
 }

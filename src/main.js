@@ -1,3 +1,4 @@
+import "./dom";
 import "./elements";
 import style from "./styles/style.css?inline";
 import "./styles/light.css";
@@ -12,5 +13,12 @@ document.adoptedStyleSheets = [style_sheet0];
 let network = document.createElement("com-network");
 document.body.appendChild(network);
 
-let c0 = network.add_chain();
-c0.add_module();
+let c0 = network.add_chain({
+    inputs: {
+        cv: { pid: 0, channel: 100 },
+        gate: { pid: 4, channel: 2 },
+    },
+    modules: [{ type: "PTH" }, { type: "LFO" }],
+});
+// c0.insert_module("PTH");
+// c0.insert_module("LFO");
