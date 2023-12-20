@@ -1,0 +1,16 @@
+@import "./props.css";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: var(--space-2);
+
+  font-family: monospace;
+  line-height: 1;
+
+  display: grid;
+}

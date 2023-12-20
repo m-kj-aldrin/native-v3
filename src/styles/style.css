@@ -1,0 +1,18 @@
+@import "./reset.css";
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.stack-row {
+  display: flex;
+  gap: var(--space-1);
+  align-items: center;
+}
+
+
+button{
+  border-color: var(--color-gray);
+}

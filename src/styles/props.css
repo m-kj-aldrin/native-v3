@@ -1,0 +1,14 @@
+:root {
+  --space-0: 2px;
+  --space-1: 4px;
+  --space-2: 8px;
+}
+
+:root{
+  --color-gray: #aaa;
+  --color-gray-light: #ddd;
+}
+
+:root{
+  --border-0: 1px var(--color-gray-light) solid;
+}
