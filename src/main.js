@@ -14,11 +14,13 @@ let network = document.createElement("com-network");
 document.body.appendChild(network);
 
 let c0 = network.add_chain({
-    inputs: {
-        cv: { pid: 0, channel: 100 },
-        gate: { pid: 4, channel: 2 },
-    },
-    modules: [{ type: "PTH" }, { type: "LFO" }],
+  inputs: {
+    cv: { pid: 0, channel: 100 },
+    gate: { pid: 4, channel: 2 },
+  },
+  modules: [{ type: "PTH" }, { type: "LFO" }],
 });
+
+let c1 = network.add_chain({});
 // c0.insert_module("PTH");
 // c0.insert_module("LFO");

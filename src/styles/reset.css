@@ -1,17 +1,22 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :where(input, button) {
-    background-color: transparent;
-    border: 1px currentColor solid;
-    border-radius: 2px;
+  background-color: transparent;
+  border: 1px currentColor solid;
+  border-radius: 2px;
 
-    font-family: inherit;
-    color: currentColor;
-    font-size: inherit;
-    line-height: inherit;
-    display: inline-block;
+  font-family: inherit;
+  color: currentColor;
+  font-size: inherit;
+  line-height: inherit;
+  display: inline-block;
 
-    cursor: pointer;
+  cursor: pointer;
+}
+
+:where(input, button):focus {
+  outline: 1px currentColor solid;
+  outline-offset: 1px;
 }

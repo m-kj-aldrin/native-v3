@@ -7,8 +7,13 @@
     flex-grow: 1;
     align-items: stretch;
   }
+  button{
+    align-self: flex-start;
+  }
 </style>
 
 <div id="chains" class="stack-row">
   <slot name="chains"></slot>
+  <button onclick="dom.get_host(this).add_chain({})">add</button>
 </div>
+

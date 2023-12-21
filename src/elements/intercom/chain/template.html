@@ -1,36 +1,39 @@
 <style>
-    :host {
-        border: var(--border-0);
-        border-radius: var(--border-radius);
-        padding: var(--space-1);
+  :host {
+    border: var(--border-0);
+    border-radius: var(--border-radius);
+    padding: var(--space-1);
 
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-1);
-    }
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
 
-    #inputs {
-        justify-content: center;
-        gap: var(--space-3);
-    }
+  #inputs {
+    justify-content: center;
+    gap: var(--space-3);
+  }
 </style>
 
 <header>
-    <div id="inputs" class="stack-row">
-        <div id="cv" class="stack-row">
-            <div>cvin</div>
-            <input-number max-length="2" class="pid"></input-number>
-            <input-number max-length="2" class="channel"></input-number>
-        </div>
-        <div id="gate" class="stack-row">
-            <div>gtin</div>
-            <input-number max-length="2" class="pid"></input-number>
-            <input-number max-length="2" class="channel"></input-number>
-        </div>
+  <div id="inputs" class="stack-row">
+    <div id="cv" class="stack-row">
+      <div>cvin</div>
+      <input-number max-length="2" class="pid"></input-number>
+      <input-number max-length="2" class="channel"></input-number>
     </div>
+    <div id="gate" class="stack-row">
+      <div>gtin</div>
+      <input-number max-length="2" class="pid"></input-number>
+      <input-number max-length="2" class="channel"></input-number>
+    </div>
+  </div>
+  <div id="controlls">
+    <button onclick="dom.get_host(this).remove()">del</button>
+  </div>
 </header>
 
 <div id="modules" class="stack">
-    <slot name="modules"></slot>
+  <slot name="modules"></slot>
 </div>
 <button onclick="dom.get_host(this).insert_module('BCH')">add</button>

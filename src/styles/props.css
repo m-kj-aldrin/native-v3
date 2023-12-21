@@ -7,14 +7,14 @@
 }
 
 :root {
-    --color-hue-primary: hsl(143, 86%, 59%);
-    --color-hue-secondary: hsl(44, 84%, 52%);
+    --color-hue-primary: hsl(214, 86%, 59%);
+    --color-hue-secondary: hsl(73, 84%, 52%);
 
     --color-error: hsl(5 90% 60%);
-    --color-info: hsl(40 50% 50%);
+    --color-info: hsl(40, 73%, 53%);
 
-    --color-black: color-mix(in srgb, var(--color-hue-primary) 25%, #000);
-    --color-white: color-mix(in srgb, var(--color-hue-primary) 5%, #fff);
+    --color-black: color-mix(in srgb, var(--color-hue-primary) 15%, #000);
+    --color-white: color-mix(in srgb, var(--color-hue-primary) 1%, #fff);
 
     --color-gray: color-mix(
         in srgb,
@@ -23,7 +23,7 @@
     );
     --color-gray-light: color-mix(
         in srgb,
-        var(--color-gray) 40%,
+        var(--color-gray) 30%,
         var(--color-white)
     );
 }

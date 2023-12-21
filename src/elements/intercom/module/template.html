@@ -1,36 +1,26 @@
 <style>
-    :host {
-        border: var(--border-0);
-        border-radius: var(--border-radius);
-        width: 256px;
-    }
-    /* header {
-        background-color: var(--color-gray-light);
-        padding: var(--space-1);
-    } */
-    #controlls {
-        margin-inline-start: auto;
-    }
-    #operator {
-        padding: var(--space-1);
-    }
+  :host {
+    border: var(--border-0);
+    border-radius: var(--border-radius);
+    width: 256px;
+  }
+  #operator {
+    padding: var(--space-1);
+  }
 
-    #remove-module {
-        --fg-color: var(--color-error);
-    }
+  #remove-module {
+    --fg-color: var(--color-error);
+  }
 </style>
 
-<header class="stack-row">
-    <div id="type">PTH</div>
-    <div id="controlls">
-        <button
-            id="remove-module"
-            onclick="dom.get_host(event.target).remove()"
-        >
-            del
-        </button>
-        <button id="minimize-module">min</button>
-    </div>
+<header>
+  <div id="type">PTH</div>
+  <div id="controlls">
+    <button id="remove-module" onclick="dom.get_host(event.target).remove()">
+      del
+    </button>
+    <button id="minimize-module">min</button>
+  </div>
 </header>
 
 <div id="operator"></div>
